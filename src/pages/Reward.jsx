@@ -7,10 +7,10 @@ const Reward = () => {
       <p>You got a free netflix account</p>
       <div className="flex w-full justify-center py-40">
         <div className="flex flex-col gap-3">
-          <p>Username: Test</p>
-          <p>Password: Test</p>
-          <p>Profile: Test</p>
-          <p>Pass Profile: Test</p>
+          <p>Email: ftb4bh@bangbowo.us</p>
+          <p>Password: premium234</p>
+          <p>Profile: Akechi</p>
+          <p>Pass Profile: 1709</p>
         </div>
       </div>
     </div>
