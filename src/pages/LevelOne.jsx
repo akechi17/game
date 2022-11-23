@@ -95,7 +95,7 @@ const LevelOne = () => {
 
   return (
     <>
-    <div className="App">
+    <div className="max-w-4xl my-10 mx-auto">
         <h1 className="text-5xl pb-5">Akechi's Memory</h1>
         <p>Level 1</p>
         <div className="flex justify-center w-full py-2.5 px-5">

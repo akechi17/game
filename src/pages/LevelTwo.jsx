@@ -97,7 +97,7 @@ const LevelTwo = () => {
 
   return (
     <>
-    <div className="App">
+    <div className="max-w-4xl my-10 mx-auto">
         <h1 className="text-5xl pb-5">Akechi's Memory</h1>
         <p>Level 2</p>
         <div className="flex justify-center w-full py-2.5 px-5 ">
@@ -126,6 +126,11 @@ const LevelTwo = () => {
     <div className="bg-white w-[40rem] p-8 m-8 rounded-lg border-2 border-solid border-black border-opacity-10">
       <h3 className="text-4xl uppercase text-black text-center">You Won!</h3>
       <p className="text-2xl text-black text-center">Score : {turns}</p>
+      <Link to="/Reward">
+        <button className="text-center w-full my-6 hover:bg-[#c23866] mt-4 inline-block py-3 px-12 rounded-lg text-white text-2xl bg-[#1b1523]" onClick={shuffleCards}>
+          See Rewards
+        </button>
+      </Link>
       <Link to="/">
         <button className="text-center w-full my-6 hover:bg-[#c23866] mt-4 inline-block py-3 px-12 rounded-lg text-white text-2xl bg-[#1b1523]" onClick={shuffleCards}>
           Start Over
