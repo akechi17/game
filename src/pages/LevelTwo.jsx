@@ -12,11 +12,12 @@ const cardImages = [
   { src: "/img/zhongli.jpg", matched: false },
   { src: "/img/azhdaha.jpg", matched: false },
   { src: "/img/hutao2.jpg", matched: false },
+  { src: "/img/childe2.jpg", matched: false },
 ];
 
 const LevelTwo = () => {
     const [cards, setCards] = useState([]);
-    const [turns, setTurns] = useState(20);
+    const [turns, setTurns] = useState(21);
     const [choiceOne, setChoiceOne] = useState(null);
     const [choiceTwo, setChoiceTwo] = useState(null);
     const [disabled, setDisabled] = useState(false);
@@ -30,7 +31,7 @@ const LevelTwo = () => {
       setChoiceOne(null)
       setChoiceTwo(null)
       setCards(shuffleCards);
-      setTurns(20);
+      setTurns(21);
       setMatched(0);
       setLevelDone(false)
       setLevelFailed(false);
@@ -42,7 +43,7 @@ const LevelTwo = () => {
     };
 
     useEffect(() => {
-      if ( matched === 8 ) {
+      if ( matched === 9 ) {
         setLevelDone(true)
       }
     }, [matched])
@@ -108,7 +109,7 @@ const LevelTwo = () => {
         </div>
 
         <div className="flex w-full justify-center py-5">
-            <div className="grid grid-cols-4 grid-rows-4 gap-5 lg:grid-cols-4">
+            <div className="grid grid-cols-3 grid-rows-6 gap-5 lg:grid-cols-6 lg:grid-rows-3">
                 {cards.map((card) => (
                 <SingleCard
                     key={card.id}
