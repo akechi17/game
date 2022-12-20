@@ -1,4 +1,4 @@
-import { LevelOne, LevelTwo, Reward } from "./pages";
+import { LevelOne, LevelTwo } from "./pages";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -7,7 +7,6 @@ function App() {
       <Routes>
         <Route path="/" element={<LevelOne/>} />
         <Route path="/LevelTwo" element={<LevelTwo/>} />
-        <Route path="/Reward" element={<Reward/>} />
       </Routes>
     </Router>
   );
